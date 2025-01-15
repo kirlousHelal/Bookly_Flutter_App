@@ -18,17 +18,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-
     _initAnimation();
-
     _navigateToHome();
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     _animationController.dispose();
   }
