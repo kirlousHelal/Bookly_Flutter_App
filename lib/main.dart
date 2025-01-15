@@ -1,3 +1,5 @@
+import 'package:bookly_app/constants.dart';
+import 'package:bookly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -7,6 +9,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -15,15 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.blueAccent,
-          elevation: 10,
-        ),
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.blue,
-        ),
+        scaffoldBackgroundColor: xPrimaryColor,
       ),
-      home: const SizedBox(),
+      home: const SplashView(),
     );
   }
 }
