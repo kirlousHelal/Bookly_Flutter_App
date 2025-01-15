@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
+        fontFamily: "GT",
+        brightness: Brightness.dark,
         scaffoldBackgroundColor: xPrimaryColor,
       ),
       home: const SplashView(),
