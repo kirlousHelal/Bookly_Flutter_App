@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../../../../core/utils/assets_data.dart';
+import '../../../../../../core/utils/assets_data.dart';
 
 class SearchIcon extends StatelessWidget {
   const SearchIcon({
@@ -16,8 +16,8 @@ class SearchIcon extends StatelessWidget {
           ? const Icon(FontAwesomeIcons.magnifyingGlass)
           : Image.asset(
               AssetsData.search,
-              width: 40,
-              height: 40,
+              width: 30,
+              height: 30,
               color: Colors.white,
             ),
     );
