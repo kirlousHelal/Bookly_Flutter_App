@@ -10,10 +10,10 @@ class HeadLineText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(top: 60),
+      padding: EdgeInsets.only(top: 60, bottom: 20),
       child: Text(
         "Best Seller",
-        style: Styles.titleMedium,
+        style: Styles.textStyle20,
       ),
     );
   }

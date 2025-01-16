@@ -39,6 +39,7 @@ dependencies:
   flutter_bloc: ^9.0.0
   bloc: ^9.0.0
   font_awesome_flutter: ^10.8.0
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -79,9 +80,22 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: GT
+     - family: GT Sectra Fine Regular
        fonts:
          - asset: assets/fonts/GT Sectra Fine Regular.ttf
+     - family: Gilroy
+       fonts:
+         - asset: assets/fonts/gilroy/Gilroy-Regular.ttf
+           weight: 500
+         - asset: assets/fonts/gilroy/Gilroy-Medium.ttf
+           weight: 400
+         - asset: assets/fonts/gilroy/Gilroy-Heavy.ttf
+           weight: 900
+         - asset: assets/fonts/gilroy/Gilroy-Bold.ttf
+           weight: 700
+         - asset: assets/fonts/gilroy/Gilroy-Light.ttf
+           weight: 100
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
