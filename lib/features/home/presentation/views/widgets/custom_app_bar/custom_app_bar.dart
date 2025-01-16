@@ -1,7 +1,7 @@
-import 'package:bookly_app/features/home/presentation/views/widgets/search_icon.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_app_bar/search_icon.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/assets_data.dart';
+import '../../../../../../core/utils/assets_data.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
