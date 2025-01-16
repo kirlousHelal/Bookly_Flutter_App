@@ -19,8 +19,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: "GT",
-        brightness: Brightness.dark,
         scaffoldBackgroundColor: xPrimaryColor,
+        colorScheme: const ColorScheme.dark(),
+        // brightness: Brightness.dark,
       ),
       home: const SplashView(),
     );

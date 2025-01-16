@@ -1,6 +1,8 @@
-import 'package:flutter/cupertino.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:flutter/material.dart';
 
-import 'custom_app_bar.dart';
+import 'head_line_text.dart';
+import 'list_feature_book_items.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -8,10 +10,13 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(top: 10, right: 15, left: 15),
+      padding: EdgeInsets.only(right: 30, left: 30),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomAppBar(),
+          ListFeatureBookItems(),
+          HeadLineText(),
         ],
       ),
     );

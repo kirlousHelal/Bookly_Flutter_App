@@ -16,8 +16,8 @@ class SearchIcon extends StatelessWidget {
           ? const Icon(FontAwesomeIcons.magnifyingGlass)
           : Image.asset(
               AssetsData.search,
-              width: 40,
-              height: 40,
+              width: 30,
+              height: 30,
               color: Colors.white,
             ),
     );
