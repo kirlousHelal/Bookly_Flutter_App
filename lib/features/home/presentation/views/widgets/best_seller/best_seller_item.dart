@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/assets_data.dart';
 import '../feature_book_item/feature_book_item.dart';
-import 'best_seller_item_info.dart';
+import 'best_seller_info/best_seller_item_info.dart';
 
 class BestSellerItem extends StatelessWidget {
   const BestSellerItem({
