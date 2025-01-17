@@ -1,7 +1,7 @@
 import 'package:bookly_app/constants.dart';
 import 'package:flutter/material.dart';
 
-import '../custom_app_bar/custom_app_bar.dart';
+import '../custom_app_bar/custom_home_app_bar.dart';
 import '../feature_book_item/list_feature_book_items.dart';
 import '../head_line_text.dart';
 
@@ -18,7 +18,7 @@ class SliverTopBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CustomAppBar(),
+            CustomHomeAppBar(),
             ListFeatureBookItems(),
             HeadLineText(),
             // ListViewBestSellerItems(),

@@ -5,3 +5,4 @@ const xTransitionDuration = Duration(seconds: 1);
 const xGtFontFamily = "GT Sectra Fine Regular";
 const xGilroyFontFamily = "Gilroy";
 const xHorizontalPadding = 30.0;
+const xTopPadding = 10.0;

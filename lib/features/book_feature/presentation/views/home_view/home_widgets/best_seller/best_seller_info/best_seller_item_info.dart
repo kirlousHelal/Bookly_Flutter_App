@@ -1,7 +1,7 @@
-import 'package:bookly_app/features/home/presentation/views/widgets/best_seller/best_seller_info/title_best_seller.dart';
+import 'package:bookly_app/features/book_feature/presentation/views/home_view/home_widgets/best_seller/best_seller_info/title_best_seller.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../../core/utils/styles.dart';
+import '../../../../../../../../core/utils/styles.dart';
 import 'best_seller_rate.dart';
 
 class BestSellerItemInfo extends StatelessWidget {

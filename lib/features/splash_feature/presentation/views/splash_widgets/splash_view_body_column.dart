@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/splash/presentation/views/widgets/slide_transition_text.dart';
+import 'package:bookly_app/features/splash_feature/presentation/views/splash_widgets/slide_transition_text.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/assets_data.dart';
