@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../../core/widgets/book_item.dart';
+import '../../../../../core/widgets/book_item.dart';
 
-class ListSliverBestSellerItems extends StatelessWidget {
-  const ListSliverBestSellerItems({
+class ListSearchResults extends StatelessWidget {
+  const ListSearchResults({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return SliverList.separated(
+    return ListView.separated(
       // shrinkWrap: true,
       // padding: const EdgeInsets.all(0),
       // physics: const NeverScrollableScrollPhysics(),

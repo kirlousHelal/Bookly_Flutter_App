@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/custom_button_styles.dart';
-import '../../shared_widgets/book_price_text.dart';
+import '../../../../../../../core/utils/custom_button_styles.dart';
+import '../../../shared_widgets/book_price_text.dart';
 
 class BookPriceButton extends StatelessWidget {
   const BookPriceButton({

@@ -14,7 +14,7 @@ class BookDetailsViewBody extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           buildSliverPadding(widget: const BookDetailsTopBody()),
-          buildSliverPadding(widget: const BookDetailsBottomBody()),
+          buildSliverFillRemaining(widget: const BookDetailsBottomBody()),
         ],
       ),
     );
@@ -24,6 +24,16 @@ class BookDetailsViewBody extends StatelessWidget {
     return SliverPadding(
       padding: const EdgeInsets.symmetric(horizontal: xHorizontalPadding),
       sliver: SliverToBoxAdapter(child: widget),
+    );
+  }
+
+  SliverFillRemaining buildSliverFillRemaining({required Widget widget}) {
+    return SliverFillRemaining(
+      hasScrollBody: false,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: xHorizontalPadding),
+        child: widget,
+      ),
     );
   }
 }

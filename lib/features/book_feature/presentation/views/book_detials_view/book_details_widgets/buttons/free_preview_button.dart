@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/custom_button_styles.dart';
-import '../../../../../../core/utils/styles.dart';
+import '../../../../../../../core/utils/custom_button_styles.dart';
+import '../../../../../../../core/utils/styles.dart';
 
 class FreePreviewButton extends StatelessWidget {
   const FreePreviewButton({

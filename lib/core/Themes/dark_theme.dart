@@ -14,7 +14,7 @@ abstract class DarkTheme {
         backgroundColor: xPrimaryColor,
         elevation: 0,
       ),
-      colorScheme: const ColorScheme.dark(),
+      colorScheme: const ColorScheme.dark(primary: Colors.white),
       // brightness: Brightness.dark,
     );
   }

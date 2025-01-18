@@ -1,7 +1,8 @@
 import 'package:bookly_app/core/utils/styles.dart';
-import 'package:bookly_app/features/book_feature/presentation/views/book_detials_view/book_details_widgets/row_buttons.dart';
 import 'package:bookly_app/features/book_feature/presentation/views/shared_widgets/feature_book_item/list_feature_book_items.dart';
 import 'package:flutter/material.dart';
+
+import '../buttons/row_buttons.dart';
 
 class BookDetailsBottomBody extends StatelessWidget {
   const BookDetailsBottomBody({super.key});
@@ -14,7 +15,8 @@ class BookDetailsBottomBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const RowButtons(),
-          const SizedBox(height: 50),
+          const Expanded(child: SizedBox(height: 50)),
+          // const Spacer(),
           Text("You Can also like",
               style: Styles.textStyle20.copyWith(fontWeight: FontWeight.bold)),
           const Padding(

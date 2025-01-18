@@ -9,13 +9,13 @@ abstract class CustomButtonStyles {
     required BuildContext context,
     Color? color,
   }) {
-    var phWidth = MediaQuery.of(context).size.width;
+    // var phWidth = MediaQuery.of(context).size.width;
     var phHeight = MediaQuery.of(context).size.height;
     return ElevatedButton.styleFrom(
       backgroundColor: color,
       shape: buildRoundedRectangleBorder(
           topLeft, bottomLeft, topRight, bottomRight),
-      fixedSize: Size(phWidth * 0.36, phHeight * 0.06),
+      fixedSize: Size.fromHeight(phHeight * 0.06),
       // fixedSize: const Size(140, 50),
     );
   }

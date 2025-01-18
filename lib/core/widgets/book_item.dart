@@ -2,12 +2,12 @@ import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../../../core/utils/assets_data.dart';
-import '../../../shared_widgets/feature_book_item/feature_book_item.dart';
-import 'best_seller_info/best_seller_item_info.dart';
+import '../../features/book_feature/presentation/views/home_view/home_widgets/best_seller/best_seller_info/best_seller_item_info.dart';
+import '../../features/book_feature/presentation/views/shared_widgets/feature_book_item/feature_book_item.dart';
+import '../utils/assets_data.dart';
 
-class BestSellerItem extends StatelessWidget {
-  const BestSellerItem({
+class BookItem extends StatelessWidget {
+  const BookItem({
     super.key,
   });
 
@@ -15,7 +15,7 @@ class BestSellerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.bookDetails);
+        GoRouter.of(context).push(AppRouter.bookDetailsView);
       },
       child: const SizedBox(
         height: 120,

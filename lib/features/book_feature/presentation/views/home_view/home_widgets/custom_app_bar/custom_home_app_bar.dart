@@ -1,8 +1,10 @@
 import 'package:bookly_app/constants.dart';
-import 'package:bookly_app/features/book_feature/presentation/views/home_view/home_widgets/custom_app_bar/search_icon.dart';
+import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../../core/utils/assets_data.dart';
+import '../../../../../../../core/widgets/search_icon.dart';
 
 class CustomHomeAppBar extends StatelessWidget {
   const CustomHomeAppBar({
@@ -21,7 +23,8 @@ class CustomHomeAppBar extends StatelessWidget {
             width: 100,
           ),
           const Spacer(),
-          const SearchIcon(),
+          SearchIcon(
+              onPressed: () => GoRouter.of(context).push(AppRouter.searchView)),
         ],
       ),
     );

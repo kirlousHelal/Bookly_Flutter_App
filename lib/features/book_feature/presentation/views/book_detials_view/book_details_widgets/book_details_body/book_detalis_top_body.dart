@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../constants.dart';
-import '../../../../../../core/utils/assets_data.dart';
-import '../../../../../../core/utils/styles.dart';
-import '../../shared_widgets/book_item_rate.dart';
-import '../../shared_widgets/feature_book_item/feature_book_item.dart';
+import '../../../../../../../constants.dart';
+import '../../../../../../../core/utils/assets_data.dart';
+import '../../../../../../../core/utils/styles.dart';
+import '../../../shared_widgets/book_item_rate.dart';
+import '../../../shared_widgets/feature_book_item/feature_book_item.dart';
 import 'custom_book_details_app_bar.dart';
 
 class BookDetailsTopBody extends StatelessWidget {
@@ -17,7 +17,7 @@ class BookDetailsTopBody extends StatelessWidget {
     return Column(
       children: [
         const CustomBookDetailsAppBar(),
-        const SizedBox(height: 20),
+        // const SizedBox(height: 20),
         buildFeatureBookItem(context),
         const SizedBox(height: 43),
         buildTitleText(),
@@ -53,7 +53,7 @@ class BookDetailsTopBody extends StatelessWidget {
   Padding buildFeatureBookItem(context) {
     var phWidth = MediaQuery.of(context).size.width;
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: phWidth * 0.15),
+      padding: EdgeInsets.symmetric(horizontal: phWidth * 0.21),
       child: const FeatureBookItem(image: AssetsData.testImage2),
     );
   }
