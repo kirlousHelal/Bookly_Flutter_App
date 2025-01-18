@@ -2,7 +2,8 @@ import 'package:bookly_app/features/book_feature/presentation/views/home_view/ho
 import 'package:flutter/material.dart';
 
 import '../../../../../../../../core/utils/styles.dart';
-import 'best_seller_rate.dart';
+import '../../../../shared_widgets/book_item_rate.dart';
+import '../../../../shared_widgets/book_price_text.dart';
 
 class BestSellerItemInfo extends StatelessWidget {
   const BestSellerItemInfo({
@@ -20,7 +21,14 @@ class BestSellerItemInfo extends StatelessWidget {
           SizedBox(height: 3),
           Text("J.K. Rowling", style: Styles.textStyle14),
           SizedBox(height: 3),
-          Expanded(child: BestSellerPriceRate()),
+          Expanded(
+              child: Row(
+            children: [
+              BookPriceText(),
+              Spacer(),
+              BookItemRate(),
+            ],
+          )),
         ],
       ),
     );

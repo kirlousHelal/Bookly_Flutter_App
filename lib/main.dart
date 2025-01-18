@@ -1,6 +1,8 @@
-import 'package:bookly_app/constants.dart';
+import 'package:bookly_app/core/Themes/dark_theme.dart';
 import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
+
+import 'core/Themes/light_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,19 +18,9 @@ class MyApp extends StatelessWidget {
       routerConfig: AppRouter.router,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        fontFamily: xGtFontFamily,
-        // textTheme: GoogleFonts.montserratTextTheme(Typography.whiteHelsinki),
-        scaffoldBackgroundColor: xPrimaryColor,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: xPrimaryColor,
-          elevation: 0,
-        ),
-        colorScheme: const ColorScheme.dark(),
-        // brightness: Brightness.dark,
-      ),
-      // book_feature: const SplashView(),
+      theme: LightTheme.theme,
+      darkTheme: DarkTheme.theme,
+      themeMode: ThemeMode.dark,
     );
   }
 }

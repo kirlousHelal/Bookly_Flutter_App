@@ -22,7 +22,7 @@ class ListFeatureBookItems extends StatelessWidget {
       child: ListView.separated(
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
-        itemCount: listImages.length ?? 10,
+        itemCount: listImages.length,
         itemBuilder: (context, index) => FeatureBookItem(
           image: index < listImages.length ? listImages[index] : listImages[1],
         ),

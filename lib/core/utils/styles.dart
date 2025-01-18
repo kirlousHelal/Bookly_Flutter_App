@@ -6,7 +6,6 @@ abstract class Styles {
     fontSize: 20,
   );
   static var textStyle30 = const TextStyle(
-    // fontFamily: xGtFontFamily,
     fontWeight: FontWeight.bold,
     fontSize: 30,
   );
