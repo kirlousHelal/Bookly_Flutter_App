@@ -41,6 +41,13 @@ dependencies:
   font_awesome_flutter: ^10.8.0
   google_fonts: ^6.2.1
   go_router: ^14.6.3
+<<<<<<< HEAD
+=======
+  dartz: ^0.10.1
+  dio: ^5.7.0
+  icons_launcher: ^3.0.0
+  rename_app: ^1.6.2
+>>>>>>> home
 
 dev_dependencies:
   flutter_test:
