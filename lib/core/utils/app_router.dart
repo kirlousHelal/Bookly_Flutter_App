@@ -1,8 +1,8 @@
 import 'package:bookly_app/features/search_feature/presentation/views/search_view.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../features/book_feature/presentation/views/book_detials_view/book_details_view.dart';
-import '../../features/book_feature/presentation/views/home_view/home_view.dart';
+import '../../features/book_feature/presentation/book_detials/view/book_details_view.dart';
+import '../../features/book_feature/presentation/home/view/home_view.dart';
 import '../../features/splash_feature/presentation/views/splash_view.dart';
 
 abstract class AppRouter {

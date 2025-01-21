@@ -1,29 +1,23 @@
-/// containsEpubBubbles : false
-/// containsImageBubbles : false
-
 class PanelizationSummary {
+  final bool containsEpubBubbles;
+  final bool containsImageBubbles;
+
   PanelizationSummary({
-    bool? containsEpubBubbles,
-    bool? containsImageBubbles,
-  }) {
-    _containsEpubBubbles = containsEpubBubbles;
-    _containsImageBubbles = containsImageBubbles;
-  }
+    required this.containsEpubBubbles,
+    required this.containsImageBubbles,
+  });
 
-  PanelizationSummary.fromJson(dynamic json) {
-    _containsEpubBubbles = json['containsEpubBubbles'];
-    _containsImageBubbles = json['containsImageBubbles'];
+  factory PanelizationSummary.fromJson(Map<String, dynamic> json) {
+    return PanelizationSummary(
+      containsEpubBubbles: json['containsEpubBubbles'],
+      containsImageBubbles: json['containsImageBubbles'],
+    );
   }
-  bool? _containsEpubBubbles;
-  bool? _containsImageBubbles;
-
-  bool? get containsEpubBubbles => _containsEpubBubbles;
-  bool? get containsImageBubbles => _containsImageBubbles;
 
   Map<String, dynamic> toJson() {
-    final map = <String, dynamic>{};
-    map['containsEpubBubbles'] = _containsEpubBubbles;
-    map['containsImageBubbles'] = _containsImageBubbles;
-    return map;
+    return {
+      'containsEpubBubbles': containsEpubBubbles,
+      'containsImageBubbles': containsImageBubbles,
+    };
   }
 }

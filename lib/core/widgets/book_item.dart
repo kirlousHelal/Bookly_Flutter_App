@@ -1,34 +1,41 @@
 import 'package:bookly_app/core/utils/app_router.dart';
+import 'package:bookly_app/features/book_feature/data/models/BookModel.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../features/book_feature/presentation/views/home_view/home_widgets/best_seller/best_seller_info/best_seller_item_info.dart';
-import '../../features/book_feature/presentation/views/shared_widgets/feature_book_item/feature_book_item.dart';
-import '../utils/assets_data.dart';
+import '../../features/book_feature/presentation/home/widgets/best_seller/best_seller_info/best_seller_item_info.dart';
+import '../../features/book_feature/presentation/shared/widgets/feature_book_item/feature_book_item.dart';
 
 class BookItem extends StatelessWidget {
   const BookItem({
     super.key,
+    required this.bookModel,
   });
+
+  final BookModel bookModel;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.bookDetailsView);
+        GoRouter.of(context).push(
+          AppRouter.bookDetailsView,
+          extra: {"bookModel": bookModel},
+        );
       },
-      child: const SizedBox(
+      child: SizedBox(
         height: 120,
         child: Row(
           children: [
             FeatureBookItem(
-              image: AssetsData.testImage,
+              imageUrl: bookModel!.volumeInfo!.imageLinks!.thumbnail!,
+              //AssetsData.testImage,
               borderRadius: 16,
               aspectRatio: 2.5 / 4,
             ),
             Expanded(
                 // width: MediaQuery.of(context).size.width * 0.6,
-                child: BestSellerItemInfo()),
+                child: BestSellerItemInfo(bookModel: bookModel)),
           ],
         ),
       ),

@@ -1,30 +1,23 @@
-/// type : "OTHER"
-/// identifier : "UOM:39015002110867"
-library;
+class IndustryIdentifier {
+  final String type;
+  final String identifier;
 
-class IndustryIdentifiers {
-  IndustryIdentifiers({
-    String? type,
-    String? identifier,
-  }) {
-    _type = type;
-    _identifier = identifier;
+  IndustryIdentifier({
+    required this.type,
+    required this.identifier,
+  });
+
+  factory IndustryIdentifier.fromJson(Map<String, dynamic> json) {
+    return IndustryIdentifier(
+      type: json['type'],
+      identifier: json['identifier'],
+    );
   }
-
-  IndustryIdentifiers.fromJson(dynamic json) {
-    _type = json['type'];
-    _identifier = json['identifier'];
-  }
-  String? _type;
-  String? _identifier;
-
-  String? get type => _type;
-  String? get identifier => _identifier;
 
   Map<String, dynamic> toJson() {
-    final map = <String, dynamic>{};
-    map['type'] = _type;
-    map['identifier'] = _identifier;
-    return map;
+    return {
+      'type': type,
+      'identifier': identifier,
+    };
   }
 }

@@ -1,5 +1,3 @@
-import 'package:bookly_app/features/book_feature/data/models/BookModel.dart';
-
 /// isAvailable : false
 
 class Pdf {
@@ -10,8 +8,6 @@ class Pdf {
   }
 
   Pdf.fromJson(dynamic json) {
-    BookModel bookModel = BookModel();
-    bookModel.selfLink;
     _isAvailable = json['isAvailable'];
   }
   bool? _isAvailable;

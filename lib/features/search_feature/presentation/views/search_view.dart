@@ -1,7 +1,7 @@
 import 'package:bookly_app/features/search_feature/presentation/views/search_widgets/search_view_body.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/styles.dart';
+import '../../../../core/utils/test_styles.dart';
 
 class SearchView extends StatelessWidget {
   const SearchView({super.key});
@@ -9,7 +9,7 @@ class SearchView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Search", style: Styles.textStyle30)),
+      appBar: AppBar(title: Text("Search", style: TextStyles.textStyle30)),
       body: const SearchViewBody(),
     );
   }

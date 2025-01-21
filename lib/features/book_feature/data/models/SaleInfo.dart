@@ -1,37 +1,53 @@
-/// country : "EG"
-/// saleability : "NOT_FOR_SALE"
-/// isEbook : false
-library;
+import 'amount_price.dart';
+import 'micro_price.dart';
+import 'offer.dart';
 
 class SaleInfo {
+  final String country;
+  final String saleability;
+  final bool isEbook;
+  final AmountPrice? listPrice;
+  final MicrosPrice? retailPrice;
+  final String? buyLink;
+  final List<Offer>? offers;
+
   SaleInfo({
-    String? country,
-    String? saleability,
-    bool? isEbook,
-  }) {
-    _country = country;
-    _saleability = saleability;
-    _isEbook = isEbook;
-  }
+    required this.country,
+    required this.saleability,
+    required this.isEbook,
+    required this.listPrice,
+    required this.retailPrice,
+    required this.buyLink,
+    required this.offers,
+  });
 
-  SaleInfo.fromJson(dynamic json) {
-    _country = json['country'];
-    _saleability = json['saleability'];
-    _isEbook = json['isEbook'];
+  factory SaleInfo.fromJson(Map<String, dynamic> json) {
+    return SaleInfo(
+      country: json['country'],
+      saleability: json['saleability'],
+      isEbook: json['isEbook'],
+      listPrice: json['listPrice'] != null
+          ? AmountPrice.fromJson(json['listPrice'])
+          : null,
+      retailPrice: json['retailPrice'] != null
+          ? MicrosPrice.fromJson(json['retailPrice'])
+          : null,
+      buyLink: json['buyLink'],
+      offers: json['offers'] != null
+          ? (json['offers'] as List).map((e) => Offer.fromJson(e)).toList()
+          : null,
+    );
   }
-  String? _country;
-  String? _saleability;
-  bool? _isEbook;
-
-  String? get country => _country;
-  String? get saleability => _saleability;
-  bool? get isEbook => _isEbook;
 
   Map<String, dynamic> toJson() {
-    final map = <String, dynamic>{};
-    map['country'] = _country;
-    map['saleability'] = _saleability;
-    map['isEbook'] = _isEbook;
-    return map;
+    return {
+      'country': country,
+      'saleability': saleability,
+      'isEbook': isEbook,
+      'listPrice': listPrice?.toJson(),
+      'retailPrice': retailPrice?.toJson(),
+      'buyLink': buyLink,
+      'offers': offers?.map((e) => e.toJson()).toList(),
+    };
   }
 }

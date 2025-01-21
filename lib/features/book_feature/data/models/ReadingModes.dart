@@ -1,30 +1,23 @@
-/// text : false
-/// image : false
-library;
-
 class ReadingModes {
+  final bool text;
+  final bool image;
+
   ReadingModes({
-    bool? text,
-    bool? image,
-  }) {
-    _text = text;
-    _image = image;
-  }
+    required this.text,
+    required this.image,
+  });
 
-  ReadingModes.fromJson(dynamic json) {
-    _text = json['text'];
-    _image = json['image'];
+  factory ReadingModes.fromJson(Map<String, dynamic> json) {
+    return ReadingModes(
+      text: json['text'],
+      image: json['image'],
+    );
   }
-  bool? _text;
-  bool? _image;
-
-  bool? get text => _text;
-  bool? get image => _image;
 
   Map<String, dynamic> toJson() {
-    final map = <String, dynamic>{};
-    map['text'] = _text;
-    map['image'] = _image;
-    return map;
+    return {
+      'text': text,
+      'image': image,
+    };
   }
 }

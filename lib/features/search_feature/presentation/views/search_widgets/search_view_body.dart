@@ -1,5 +1,5 @@
 import 'package:bookly_app/constants.dart';
-import 'package:bookly_app/core/utils/styles.dart';
+import 'package:bookly_app/core/utils/test_styles.dart';
 import 'package:bookly_app/features/search_feature/presentation/views/search_widgets/search_field.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class SearchViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: Text("Search Results",
-          style: Styles.textStyle30.copyWith(fontSize: 25)),
+          style: TextStyles.textStyle30.copyWith(fontSize: 25)),
     );
   }
 }
