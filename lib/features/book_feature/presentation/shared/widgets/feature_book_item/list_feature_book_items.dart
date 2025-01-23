@@ -2,7 +2,9 @@ import 'package:bookly_app/core/utils/assets_data.dart';
 import 'package:bookly_app/features/book_feature/presentation/home/manager/get_features_cubit/get_features_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/utils/app_router.dart';
 import '../../../../../../core/widgets/custom_error_message.dart';
 import '../../../../../../core/widgets/custom_loading_indicator.dart';
 import 'feature_book_item.dart';
@@ -30,11 +32,20 @@ class ListFeatureBookItems extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemCount: state.books.length,
-              itemBuilder: (context, index) => FeatureBookItem(
-                imageUrl: state.books[index].volumeInfo!.imageLinks!.thumbnail!,
-                // index < listImages.length
-                //     ? listImages[index]
-                //     : listImages[1],
+              itemBuilder: (context, index) => InkWell(
+                onTap: () {
+                  GoRouter.of(context).push(
+                    AppRouter.bookDetailsView,
+                    extra: state.books[index],
+                  );
+                },
+                child: FeatureBookItem(
+                  imageUrl:
+                      state.books[index].volumeInfo!.imageLinks!.thumbnail!,
+                  // index < listImages.length
+                  //     ? listImages[index]
+                  //     : listImages[1],
+                ),
               ),
               separatorBuilder: (context, index) => const SizedBox(width: 20),
             ),

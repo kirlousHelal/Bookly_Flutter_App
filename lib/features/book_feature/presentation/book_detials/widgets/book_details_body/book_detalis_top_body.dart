@@ -11,22 +11,20 @@ import 'custom_book_details_app_bar.dart';
 class BookDetailsTopBody extends StatelessWidget {
   const BookDetailsTopBody({
     super.key,
-    required this.bookModel,
   });
-
-  final BookModel bookModel;
 
   @override
   Widget build(BuildContext context) {
+    var bookModel = InitModelCubit.get(context).bookModel!;
     return Column(
       children: [
         const CustomBookDetailsAppBar(),
         // const SizedBox(height: 20),
-        buildFeatureBookItem(context),
+        buildFeatureBookItem(bookModel: bookModel, context: context),
         const SizedBox(height: 43),
-        buildTitleText(context),
+        buildTitleText(bookModel: bookModel),
         const SizedBox(height: 6),
-        buildAuthorText(context),
+        buildAuthorText(bookModel: bookModel),
         const SizedBox(height: 18),
         BookItemRate(
           bookModel: bookModel,
@@ -35,10 +33,9 @@ class BookDetailsTopBody extends StatelessWidget {
     );
   }
 
-  Text buildAuthorText(context) {
-    var bookModel = InitModelCubit.get(context).bookModel;
+  Text buildAuthorText({required BookModel bookModel}) {
     return Text(
-      bookModel!.volumeInfo.authors!.first!,
+      bookModel!.volumeInfo?.authors?.first ?? "unknown author",
       style: TextStyles.textStyle16.copyWith(
         color: Colors.grey,
         fontFamily: xGtFontFamily,
@@ -47,20 +44,20 @@ class BookDetailsTopBody extends StatelessWidget {
     );
   }
 
-  Text buildTitleText(context) {
-    var bookModel = InitModelCubit.get(context).bookModel;
+  Text buildTitleText({required BookModel bookModel}) {
     return Text(
       bookModel!.volumeInfo.title!,
       style: TextStyles.textStyle20.copyWith(
         fontFamily: xGtFontFamily,
         fontWeight: FontWeight.bold,
       ),
+      textAlign: TextAlign.center,
     );
   }
 
-  Padding buildFeatureBookItem(context) {
+  Padding buildFeatureBookItem(
+      {required context, required BookModel bookModel}) {
     var phWidth = MediaQuery.of(context).size.width;
-    var bookModel = InitModelCubit.get(context).bookModel;
     var imageUrl = bookModel?.volumeInfo.imageLinks.thumbnail;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: phWidth * 0.21),

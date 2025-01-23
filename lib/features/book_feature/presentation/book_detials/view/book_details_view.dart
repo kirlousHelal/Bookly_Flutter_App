@@ -13,15 +13,14 @@ class BookDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final args = GoRouter.of(context).state?.extra as Map<String, dynamic>;
-    final BookModel bookModel = args['bookModel'];
+    final bookModel = GoRouter.of(context).state?.extra as BookModel;
     final String? category = bookModel.volumeInfo.categories?.first;
     return MultiBlocProvider(
       providers: [
         BlocProvider(
           create: (context) =>
               GetSimilarCubit(homeRepo: getIt.get<HomeRepoImpl>())
-                ..fetchSimilarBooks(category: category!),
+                ..fetchSimilarBooks(category: category ?? "all"),
         ),
         BlocProvider(
           create: (context) =>
