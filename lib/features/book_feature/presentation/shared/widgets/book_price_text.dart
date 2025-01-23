@@ -1,7 +1,6 @@
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:bookly_app/features/book_feature/data/models/BookModel.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../core/models/book_model/BookModel.dart';
 import '../../../../../core/utils/test_styles.dart';
 
 class BookPriceText extends StatelessWidget {
@@ -19,7 +18,7 @@ class BookPriceText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AutoSizeText(
+    return Text(
       bookModel.saleInfo!.isEbook
           ? "${bookModel.saleInfo.listPrice?.amount ?? "0.00"} "
               "${bookModel.saleInfo.listPrice?.currencyCode ?? "\$"}"

@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../../../data/models/BookModel.dart';
+import '../../../../../../core/models/book_model/BookModel.dart';
 import '../../../../data/repos/home_repo.dart';
 
 part 'get_newest_state.dart';

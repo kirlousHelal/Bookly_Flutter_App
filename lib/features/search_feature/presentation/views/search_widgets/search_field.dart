@@ -1,3 +1,4 @@
+import 'package:bookly_app/features/search_feature/presentation/manager/search_cubit/search_cubit.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/search_icon.dart';
@@ -12,6 +13,9 @@ class SearchField extends StatelessWidget {
     return TextField(
       keyboardType: TextInputType.text,
       decoration: buildInputDecoration(),
+      onChanged: (value) {
+        SearchCubit.get(context).fetchSearchBooks(search: value);
+      },
     );
   }
 

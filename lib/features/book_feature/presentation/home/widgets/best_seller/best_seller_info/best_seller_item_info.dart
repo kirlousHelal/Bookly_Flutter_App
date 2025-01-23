@@ -1,8 +1,8 @@
-import 'package:bookly_app/features/book_feature/data/models/BookModel.dart';
 import 'package:bookly_app/features/book_feature/presentation/home/widgets/best_seller/best_seller_info/title_best_seller.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../../../core/utils/test_styles.dart';
+import '../../../../../../../core/models/book_model/BookModel.dart';
 import '../../../../shared/widgets/book_item_rate.dart';
 import '../../../../shared/widgets/book_price_text.dart';
 

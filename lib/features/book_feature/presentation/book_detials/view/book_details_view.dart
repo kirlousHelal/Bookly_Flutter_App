@@ -1,5 +1,4 @@
 import 'package:bookly_app/core/utils/service_locator.dart';
-import 'package:bookly_app/features/book_feature/data/models/BookModel.dart';
 import 'package:bookly_app/features/book_feature/data/repos/home_repo_impl.dart';
 import 'package:bookly_app/features/book_feature/presentation/book_detials/manager/get_similar_cubit/get_similar_cubit.dart';
 import 'package:bookly_app/features/book_feature/presentation/book_detials/manager/init_model_cubit/init_model_cubit.dart';
@@ -7,6 +6,8 @@ import 'package:bookly_app/features/book_feature/presentation/book_detials/widge
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+
+import '../../../../../core/models/book_model/BookModel.dart';
 
 class BookDetailsView extends StatelessWidget {
   const BookDetailsView({super.key});

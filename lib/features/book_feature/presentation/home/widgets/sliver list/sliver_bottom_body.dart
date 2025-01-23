@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../../constants.dart';
+import '../../../../../../core/utils/constants.dart';
 import 'list_sliver_best_seller_items.dart';
 
 class SliverBottomBody extends StatelessWidget {

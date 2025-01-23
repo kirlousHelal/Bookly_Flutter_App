@@ -1,10 +1,10 @@
 import 'package:bookly_app/core/utils/app_router.dart';
-import 'package:bookly_app/features/book_feature/data/models/BookModel.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/book_feature/presentation/home/widgets/best_seller/best_seller_info/best_seller_item_info.dart';
 import '../../features/book_feature/presentation/shared/widgets/feature_book_item/feature_book_item.dart';
+import '../models/book_model/BookModel.dart';
 
 class BookItem extends StatelessWidget {
   const BookItem({

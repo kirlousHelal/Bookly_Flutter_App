@@ -1,9 +1,9 @@
-import 'package:bookly_app/features/book_feature/data/models/BookModel.dart';
 import 'package:bookly_app/features/book_feature/presentation/book_detials/manager/init_model_cubit/init_model_cubit.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../../constants.dart';
 import '../../../../../../../core/utils/test_styles.dart';
+import '../../../../../../core/models/book_model/BookModel.dart';
+import '../../../../../../core/utils/constants.dart';
 import '../../../shared/widgets/book_item_rate.dart';
 import '../../../shared/widgets/feature_book_item/feature_book_item.dart';
 import 'custom_book_details_app_bar.dart';

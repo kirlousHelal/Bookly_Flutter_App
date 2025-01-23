@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../../../constants.dart';
 import '../../../../../../../../core/utils/test_styles.dart';
+import '../../../../../../../core/utils/constants.dart';
 
 class TitleBestSeller extends StatelessWidget {
   const TitleBestSeller({

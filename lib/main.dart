@@ -7,8 +7,8 @@ import 'package:bookly_app/features/book_feature/presentation/home/manager/get_n
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'bloc_observer.dart';
 import 'core/Themes/light_theme.dart';
+import 'core/utils/bloc_observer.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
