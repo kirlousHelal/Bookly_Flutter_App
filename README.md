@@ -76,7 +76,7 @@ lib/
 
 |             Splash Screen             |             Search Screen             |             Preview Book             |
 | :-----------------------------------: | :-----------------------------------: | :----------------------------------: |
-| ![](Project_Images/splash_screen.png) | ![](Project_Images/search_screen.png) | ![](Project_Images/preview_book.png) |
+| ![Splash Screen](Project_Images/Splash%20Screen.png) | ![](Project_Images/search_screen.png) | ![](Project_Images/preview_book.png) |
 
 |             Opening Screen             |             Home Screen             |             Book Details             |
 | :------------------------------------: | :---------------------------------: | :----------------------------------: |
