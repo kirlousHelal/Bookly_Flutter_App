@@ -82,8 +82,6 @@ lib/
 | :------------------------------------: | :---------------------------------: | :----------------------------------: |
 | ![Opening Screen](Project_Images/Opening%20Screen.png) | ![Home Screen](Project_Images/Home.png) | ![Book Details](Project_Images/Book%20Details.png) |
 
-> Make sure your images are named using lowercase and underscores (`example_screen.png`) and placed in `Project_Images/` in the root directory.
-
 ---
 
 ## 🚀 Getting Started
