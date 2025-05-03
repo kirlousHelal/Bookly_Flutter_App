@@ -76,11 +76,12 @@ lib/
 
 |             Splash Screen             |             Search Screen             |             Preview Book             |
 | :-----------------------------------: | :-----------------------------------: | :----------------------------------: |
-| ![Splash Screen](Project_Images/Splash%20Screen.png) | ![](Project_Images/search_screen.png) | ![](Project_Images/preview_book.png) |
+| ![Splash Screen](Project_Images/Splash%20Screen.png) | ![Search Screen](Project_Images/Search%20Screen.png)
+ | ![Preview Book](Project_Images/Preview%20Book.png) |
 
 |             Opening Screen             |             Home Screen             |             Book Details             |
 | :------------------------------------: | :---------------------------------: | :----------------------------------: |
-| ![](Project_Images/opening_screen.png) | ![](Project_Images/home_screen.png) | ![](Project_Images/book_details.png) |
+| ![Opening Screen](Project_Images/Opening%20Screen.png) | ![Home Screen](Project_Images/Home.png) | ![Book Details](Project_Images/Book%20Details.png) |
 
 > Make sure your images are named using lowercase and underscores (`example_screen.png`) and placed in `Project_Images/` in the root directory.
 
