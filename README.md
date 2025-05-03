@@ -51,15 +51,28 @@ The app follows **Clean Architecture** to separate concerns and ensure testabili
 
 ## 📷 Screenshots
 
-> Add actual screenshots or replace the placeholders below.
-
-- ![Splash Screen](Project_Images/splash.png)
-- ![Search Screen](Project_Images/search.png)
-- ![Preview Book](Project_Images/preview.png)
-- ![Opening Screen](Project_Images/opening.png)
-- ![Home Screen](Project_Images/home.png)
-- ![Search Book Details](Project_Images/search_details.png)
-- ![Book Details](Project_Images/book_details.png)
+| <div style="text-align: center;">
+    <img src="Project_Images/Splash Screen.png" width="300"/>
+    <p style="margin-top: 10px;"><strong>Splash Screen</strong></p>
+</div> | <div style="text-align: center;">
+    <img src="Project_Images/Search Screen.png" width="300"/>
+    <p style="margin-top: 10px;"><strong>Search Screen</strong></p>
+</div> | <div style="text-align: center;">
+    <img src="Project_Images/Preview Book.png" width="300"/>
+    <p style="margin-top: 10px;"><strong>Preview Book</strong></p>
+</div> |
+| --- | --- | --- |
+| <div style="text-align: center;">
+    <img src="Project_Images/Opening Screen.png" width="300"/>
+    <p style="margin-top: 10px;"><strong>Opening Screen</strong></p>
+</div> | <div style="text-align: center;">
+    <img src="Project_Images/Home.png" width="300"/>
+    <p style="margin-top: 10px;"><strong>Home Screen</strong></p>
+</div> |
+ <div style="text-align: center;">
+    <img src="Project_Images/Book Details.png" width="300"/>
+    <p style="margin-top: 10px;"><strong>Book Details Screen</strong></p>
+</div> | |
 
 ---
 
