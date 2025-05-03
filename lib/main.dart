@@ -1,3 +1,4 @@
+// main.dart
 import 'package:bookly_app/core/Themes/dark_theme.dart';
 import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:bookly_app/core/utils/service_locator.dart';
